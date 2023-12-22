@@ -15,7 +15,7 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        char[] charSet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','y','x','V','U'};
+        Character[] charSet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','y','x','V','U'};
         Image img = Image.fromFile("dino.png");
         BrightnessImgCharMatcher charMatcher = new BrightnessImgCharMatcher(img, "Courier New");
         HtmlAsciiOutput asciiOutput = new HtmlAsciiOutput("out1.html", "Courier New");

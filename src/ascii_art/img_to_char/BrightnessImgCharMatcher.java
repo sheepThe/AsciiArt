@@ -16,8 +16,8 @@ public class BrightnessImgCharMatcher {
         this.font = font;
     }
 
-    public char[][] chooseChars(int numCharsInRow , char[] charSet){ // אמרו להשתמש ב Character אבל במקום השתמשתי בצאר
-       return convertImageToAscii(charSet , giveBrightnessLevel(charSet) , numCharsInRow);
+    public char[][] chooseChars(int numCharsInRow , Character[] charSet){ // אמרו להשתמש ב Character אבל במקום השתמשתי בצאר
+       return convertImageToAscii(toPrimitiveCharArray(charSet) , giveBrightnessLevel(toPrimitiveCharArray(charSet)) , numCharsInRow);
 
     }
     private  double[] giveBrightnessLevel(char[] chars ){
